@@ -1,0 +1,15 @@
+{
+ "id": 203, "pass": true, "square_ms": 7.151404, "n1_ms": 3.161438, "n32_ms": 8.356752, "tok_s": 116.226071,
+ "cases": [
+  {"group": "n1", "M": 288,   "K": 288, "N": 1,   "ms": 0.056793},
+  {"group": "n1", "M": 768,   "K": 288, "N": 1,   "ms": 0.098707},
+  {"group": "n1", "M": 288,   "K": 768, "N": 1,   "ms": 0.095535},
+  {"group": "n1", "M": 32000, "K": 288, "N": 1,   "ms": 2.910403},
+  {"group": "n32", "M": 288,  "K": 288, "N": 32,  "ms": 0.114957},
+  {"group": "n32", "M": 768,  "K": 288, "N": 32,  "ms": 0.214489},
+  {"group": "n32", "M": 288,  "K": 768, "N": 32,  "ms": 0.280869},
+  {"group": "n32", "M": 32000,"K": 288, "N": 32,  "ms": 7.746437},
+  {"group": "square", "M": 768, "K": 768, "N": 768, "ms": 7.151404}
+ ],
+ "note": "mini1-gemm run 203 as scored by the course grader (kernel ms per case; tok_s = story run with every matmul on the kernel). Copied from results/run203_scores.json of the shared mini1-gemm folder; link clock 296 MHz."
+}

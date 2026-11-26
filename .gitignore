@@ -1,0 +1,52 @@
+# Build outputs (xclbins are tens of MB; share via a GitHub Release instead)
+build/
+*.xclbin
+*.xo
+*.xclbin.info
+*.xsa
+*.ltx
+*.log
+*.jou
+*.str
+.Xil/
+_x/
+_x_*/
+tmp_kernel_pack*/
+packaged_kernel*/
+csynth*/
+*.o
+*.d
+
+# Compiled binaries
+slm/run_cpu
+slm/run_fpga
+slm/run_fpga.c
+slm/slm_host
+slm/slm_sweep
+slm/*_mock
+slm/mocktest_build/
+slm/test/build/
+
+# Model weights and tokenizer (download separately, see README)
+*.bin
+!**/test/**/*.bin
+
+# Board result bundles (large, contain raw logs); keep summarized results in docs/
+results/board/*/fpga-results-*/
+fpga-results-*/
+
+# Local reference outputs, scratch, python envs
+slm/ref_cpu*.txt
+slm/ref_cpu*.err
+slm/slm.conf
+slm/slm_*.csv
+slm/slm_metrics.txt
+final_*.txt
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.tar.gz
+.DS_Store
+.vscode/
+.idea/
